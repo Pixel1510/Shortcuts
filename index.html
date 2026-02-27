@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcut Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            width: 100%;
+            max-width: 400px; 
+            border: 1px solid #333;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            font-size: 1.6rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 18px; 
+            border-radius: 12px;
+            font-weight: 600;
+            display: block;
+            transition: transform 0.1s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 700px;
+                padding: 2.5rem;
+            }
+            .links {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+        }
+        
+        .btn:active {
+            transform: scale(0.96);
+            filter: brightness(0.9);
+        }
+ 
+        @media (hover: hover) {
+            .btn:hover {
+                filter: brightness(1.2);
+                transform: translateY(-2px);
+            }
+        }
+  
+        .youtube { background-color: #cc0000; }
+        .archive { background-color: #1a8c5b; }
+        .pfadfinder { background-color: #6200ee; }
+        .teams { background-color: #490678; }   
+        .gemini { background-color: #4285f4; }   
+        .gmx { background-color: #c80fdd; }
+        .office { background-color: #0b2ecb; }
+        .word { background-color: #0ebc1f; }
+        .github { background-color: #da510d; }
+        .mru { background-color: #5180a7; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Shortcuts</h1>
+    <div class="links">
+        <a href="https://www.youtube.com" target="_blank" class="btn youtube">YouTube</a>
+        <a href="https://archive.org" target="_blank" class="btn archive">Internet Archive</a>
+        <a href="https://gemini.google.com/app?hl=de" target="_blank" class="btn gemini">Gemini</a>
+        <a href="https://www.gmx.net/" target="_blank" class="btn gmx">Gmx Mail</a>
+        <a href="https://e.mail.ru/inbox/" target="_blank" class="btn mru">Mail.ru</a>
+        <a href="https://m365.cloud.microsoft/" target="_blank" class="btn office">Microsoft 365</a>
+        <a href="https://word.cloud.microsoft/" target="_blank" class="btn word">Word Online</a>
+        <a href="https://teams.cloud.microsoft/" target="_blank" class="btn teams">Teams Online</a>
+        <a href="https://github.com/" target="_blank" class="btn github">GitHub</a>
+        <a href="https://pixel1510.github.io/Pfadfinder/" target="_blank" class="btn pfadfinder">Pfadfinder Website</a>
+    </div>
+</div>
+
+</body>
+</html>
